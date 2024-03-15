@@ -11,17 +11,34 @@ color: white;
 
 }
 
-header,
-footer {
-    background-color: #9b3b49;
-    position: fixed;
-    position: static;
-    top: 0%;
+header {
+position: fixed;
+  top: 0;
+  left: 0;
+    background-color: #9b3b49;
     color: white;
 }
+footer{
+background-color:#9b3b49;
+color: white;
+position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+/* Style for the header */
+header {
+  
+  width: 100%;
+  background-color: #333; /* Change to your desired background color */
+  color: #fff; /* Change to your desired text color */
+  padding: 10px; /* Adjust as needed */
+}
 
-footer>i {
-    color: white;
+/* Style for the main content */
+main {
+  margin-top: 50px; /* Adjust to accommodate the header height */
+  margin-bottom: 100px; /* Adjust to accommodate the footer height */
 }
 
 header>a {
