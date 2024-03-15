@@ -7,6 +7,10 @@ body {
     /*background-color: #9b3b49;*/
     background-color: #e7e7e7;
 }
+.navbar>a {
+color: white;
+
+}
 
 header,
 footer {
