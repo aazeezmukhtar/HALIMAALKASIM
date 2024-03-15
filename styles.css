@@ -67,7 +67,7 @@ a {
     flex-direction: row;
     justify-content: space-around
 }
-i{
+i,h2{
 color:#20BAEE;
 }
 
