@@ -42,8 +42,7 @@ a {
     background-color: #9b3b49;
     color: white;
 }
-
-/*officials*/
+
 .official img {
     width: 100px;
     height: 100px;
@@ -58,7 +57,7 @@ a {
 
 .social-media li {
     display: inline-block;
-    margin-right: 10px;
+   
 }
 
 .impact-section{
