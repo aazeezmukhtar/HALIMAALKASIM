@@ -17,6 +17,7 @@ position: fixed;
   left: 0;
     background-color: #9b3b49;
     color: white;
+z-index: 100;
 }
 footer{
 background-color:#9b3b49;
@@ -28,7 +29,7 @@ color: white;
 
 /* Style for the main content */
 main {
-  margin-top: 50px; /* Adjust to accommodate the header height */
+  margin-top: 70px; /* Adjust to accommodate the header height */
   margin-bottom: 100px; /* Adjust to accommodate the footer height */
 }
 
