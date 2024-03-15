@@ -74,28 +74,27 @@
                 </div>
             </div>
         </section>
-        <section class="container impact-section my-5">
-            <div class="container text-center m-2">
-                <h2>Our Impact</h2>
-                <div class="row my-5">
-                    <div class="col-md-4">
-                        <div class="card impact-item p-5">
-                            <h1> <i class="fas fa-tasks"></i></h1>
-                            <h5>Projects Done</h5>
-                            <h2 class="impact-number">100</h2>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card impact-item p-5">
-                            <h1> <i class="fas fa-users"></i></h1>
-                            <h5>People Reached</h5>
-                            <h2 class="impact-number">10,000</h2>
-                        </div>
-                    </div>
-
+     <section class="container impact-section my-5">
+    <div class="container text-center m-2">
+        <h2>Our Impact</h2>
+        <div class="row my-5">
+            <div class="col-md-4">
+                <div class="card impact-item p-5">
+                    <h1><i class="fas fa-tasks"></i></h1>
+                    <h5>Projects Done</h5>
+                    <h2 class="impact-number" data-target="100">0</h2>
                 </div>
             </div>
-        </section>
+            <div class="col-md-4">
+                <div class="card impact-item p-5">
+                    <h1><i class="fas fa-users"></i></h1>
+                    <h5>People Reached</h5>
+                    <h2 class="impact-number" data-target="10000">0</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
         <section class="officals container">
             <div class="official-card my-5 text-center">
                 <div class="card m-auto">
@@ -178,6 +177,32 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const counters = document.querySelectorAll('.impact-number');
+    const speed = 200; // The lower the slower
+
+    counters.forEach(counter => {
+        const updateCount = () => {
+            const target = +counter.getAttribute('data-target');
+            const count = +counter.innerText;
+
+            // Increment the count by 1
+            const inc = target / speed;
+
+            if (count < target) {
+                counter.innerText = Math.ceil(count + inc);
+                setTimeout(updateCount, 30); // Adjust the delay for smoother animation
+            } else {
+                counter.innerText = target; // Set the final count
+            }
+        };
+
+        updateCount();
+    });
+});
+
+</script>
 
 </body>
 
