@@ -7,10 +7,12 @@
   <title>Home</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <style>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+ <link rel="stylesheet" href="styles.css">
+ <style>
     .static-header {
       font-family: Arial, Helvetica, sans-serif;
-      color: black;
+      color: white;
     }
   </style>
 </head>
@@ -18,8 +20,8 @@
 <body>
 
   <header class="static-header">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand  dark" href="#">HALIMA ALKASIM</a>
+    <nav class="navbar navbar-expand-md container">
+      <a class="navbar-brand" href="#">HALIMA ALKASIM</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -27,7 +29,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="about.html">About Us</a>
@@ -44,19 +46,19 @@
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="images/1.png" class="d-block w-100" alt="Image 1">
+          <img src="images/1.jpg" class="d-block w-100" alt="Image 1">
         </div>
         <div class="carousel-item">
-          <img src="images/2.png" class="d-block w-100" alt="Image 2">
+          <img src="images/2.jpg" class="d-block w-100" alt="Image 2">
         </div>
         <div class="carousel-item">
-          <img src="images/3.png" class="d-block w-100" alt="Image 2">
+          <img src="images/3.jpg" class="d-block w-100" alt="Image 3">
         </div>
         <div class="carousel-item">
-          <img src="images/5.png" class="d-block w-100" alt="Image 2">
+          <img src="images/5.jpg" class="d-block w-100" alt="Image 4">
         </div>
         <div class="carousel-item">
-          <img src="images/6.png" class="d-block w-100" alt="Image 2">
+          <img src="images/6.jpg" class="d-block w-100" alt="Image 5">
         </div>
         <!-- Add more carousel items here -->
       </div>
@@ -69,32 +71,7 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-    <section class="missions-visions-section">
-      <div class="container mt-5">
-        <div class="row">
-          <div class="col-md-6">
-            <h1><i class="fas fa-bullseye"></i></h1>
-            <div class="mission">
-              <h3 class="text-center my-2">Mission</h3>
-              <p>Our mission is to provide aid and support to those in need, regardless of their background or
-                circumstances. We strive to make a positive impact on communities worldwide.</p>
 
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="vision">
-              <h1><i class="fas fa-eye"></i></h1>
-              <h3 class="text-center my-2">Vision</h3>
-              <p>Our vision is a world where every person has access to basic necessities such as food, shelter,
-                education, and healthcare.</p>
-              <p>We aim to provide an empoerment support to young men and women that brings about self-reliance feeling and eradicates poverty in the society</p>
-              <p>We aim to engage to engage in providing educational and health delivery development and advancement support through distribution of reading materials, scholarship, free medical care, free clothing/feeding and provision of social amenities to less previlege communities</p>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <section class="about-us-section mt-5">
       <div class="container">
@@ -103,11 +80,11 @@
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">About Us</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et odio id turpis
-                  vestibulum sagittis.</p>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et odio id turpis
-                  vestibulum sagittis.</p>
-                <a href="about.html" class="btn btn-primary">Read More</a>
+                <p class="card-text">Our mission is to provide aid and support to those in need, regardless of their background or
+                  circumstances. We strive to make a positive impact on communities worldwide.</p>
+                <p class="card-text">Our vision is a world where every person has access to basic necessities such as food, shelter,
+                  education, and healthcare. We aim to create a future where poverty and suffering are minimized.</p>
+                <a href="about.html" class="btn">Read More</a>
               </div>
             </div>
           </div>
@@ -156,9 +133,31 @@
       </div>
     </section>
   </main>
-
-  <footer class="static-footer">
-    <!-- Add your static footer content here -->
+  <footer class="static-footer my-5 p-3">
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Contact Us</h4>
+          <p>No. 20 Sabon Gari,<br>Daura Katsina State,<br>Nigeria</p>
+          <p><i class="fas fa-phone"></i> +234 703 692 9675</p>
+          <p><i class="far fa-envelope"></i> halimaalkasimfoundation@gmail.com</p>
+        </div>
+        <div class="col-md-6">
+          <h4>Follow Us</h4>
+          <h6 class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i> </a>     Facebook<br><br>
+            <a href="#"><i class="fab fa-twitter"></i> </a>     Twitter</li><br><br>
+            <a href="#"><i class="fab fa-instagram"></i></a>     Instagram<br><br>
+            <a href="#"><i class="fab fa-tiktok"></i></a>     Tiktok
+          </h6>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p>&copy; 2024 Halima Alkasim Charity and Orphans Foundation. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
